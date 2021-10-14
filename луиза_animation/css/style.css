@@ -1,0 +1,59 @@
+body {
+    height: 97vh;
+    background-color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    background-color: crimson;
+    position: relative;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left:0;
+    animation: dvd 20s forwards infinite alternate-reverse;
+
+} 
+@keyframes dvd {
+    15% {
+        top: 83%;
+        left: 45%;
+        background-color: blue;
+    } 
+    30% {
+        top: 40%;
+        left: 45%;
+        background-color: rgb(29, 173, 49);
+    }
+    45% {
+        top: 0%;
+        left: 50%;
+        background-color: gold;
+    }
+
+    60% {
+        top: 60%;
+        left: 50%;
+        background-color: red;
+    }
+    75% {
+        top: 82%;
+        left: 30;
+        background-color: darkviolet;
+    }
+    90% {
+        top: 40%;
+        left: 93%;
+        background-color: aqua;
+    }
+100% {
+    top: 0;
+    left: 0;
+}
+
+}
