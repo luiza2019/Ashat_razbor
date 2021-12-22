@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0081cb33;
+}
+
+.desk {
+    width: 500px;
+    height: 25px;
+    background-color: black;
+    border-radius: 30px;
+    transform: rotate(-15deg);
+    animation-name: up-down;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    bottom: 100px;
+    left: 400px;
+    animation-name: ball-move;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+    .ball::after {
+        content: ;
+        width: 10px;
+        height: 10px;
+        background: gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+}
+
+@keyframes ball-move {
+    from {
+        left: 400px;
+        transform: rotate(360deg);
+    }
+    to {
+        left: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes desk-move {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframe up-down {
+    from {
+        transform: rotate(15deg)
+    }
+    to {
+        transform: rotate {
+            -15deg
+        }
+    }
+}

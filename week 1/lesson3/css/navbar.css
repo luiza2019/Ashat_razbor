@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin-left: 18px;
+}
+
+/* убираем нижнее подчеркивание и цвет по умолчанию убираем */
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+/*изменяем фоновый цвет и углы у инпута */
+
+.nav-item input {
+    background: #ffe600;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0 3px 5px;
+}

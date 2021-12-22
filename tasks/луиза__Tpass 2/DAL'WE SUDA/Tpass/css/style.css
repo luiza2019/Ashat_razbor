@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #0F2336;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0F2336;
+}
+
+nav {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__inner {
+    width: 80%;
+    height: 50px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav__inner_list {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav__inner_list p {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .nav__inner_list button {
+    width: 122px;
+    height: 50px;
+    background-color: #0F2336;
+    color: #fff;
+    border: 1px solid #0F2336;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    height: auto;
+    margin: 70px auto;
+}
+
+.hero__left button {
+    background-color: #00CCCC;
+    font-size: 18px;
+    font-weight: bold;
+    width: 208px;
+    height: 60px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 18px rgba(0, 201, 201, 0.55);
+}
+
+.hero__left h1 {
+    font-size: 55px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.hero__left {
+    width: 50%;
+}
+
+.hero__right #trees {
+    width: 732px;
+    margin-top: -103px;
+}
+
+.hero__right {
+    width: 85%;
+    position: relative;
+}
+
+.hero__right #hero_image {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.features .feature {
+    width: 80%;
+    max-width: 325px;
+    margin: 20px 0;
+}
+
+.features h2 {
+    margin-top: 30px;
+}
+
+.features p {
+    margin-top: 12px;
+    color: #576D81;
+    font-size: 16px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 130px auto;
+    height: 540px;
+    background-color: #F4F5F6;
+    border-radius: 50px;
+}
+
+.info img {
+    width: 580px;
+    height: 640px;
+}
+
+.info__description img {
+    width: 109px;
+    height: 10px;
+    margin-top: 50px;
+}
+
+.info .info__description h2 {
+    font-size: 40px;
+    max-width: 195px;
+    margin: 20px 0;
+}
+
+.info .info__description p {
+    max-width: 414px;
+    font-size: 16px;
+    color: #576D81;
+    line-height: 24px;
+}
+
+.benefits {
+    width: 100%;
+    height: 527px;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-bottom: 180px;
+    background-color: #F4F5F6;
+}
+
+.benefits__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.benefits__list {
+    width: 505px;
+    margin-top: -37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits__list_item {
+    width: 455px;
+    height: 179px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+}
+
+.benefits__list_item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 23px;
+}
+
+.benefits__list_item:nth-child(2) {
+    align-self: flex-end;
+}
+
+.benefits__list_item_desc {
+    margin-top: 13px;
+    max-width: 310px;
+}
+
+.benefits__list_item_desc h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.benefits__list_item_desc p {
+    color: #576D81;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#benefits-img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: -73px;
+}
+
+.info:last-child {
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.house {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-1 h2 {
+    width: 520px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.block-1 img {
+    margin-bottom: 27px;
+}
+
+.burger-menu {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.block-2 {
+    margin-bottom: 5px;
+}
+
+.block-2 input {
+    margin-bottom: 20px;
+    background-color: #F0F0F2;
+    color: rgba(0px, 0px, 0px, 0.35px);
+    padding: 15px 110px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+.block-2 button {
+    padding: 16px 35px;
+    border: none;
+    background-color: #00CCCC;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.block-3 {
+    margin-left: 170px;
+}
+
+.block-3 .apples {
+    margin-right: 25px;
+}
+
+.block-3 .apples {
+    margin-right: 25px;
+}
+
+.footer {
+    width: 1440px;
+    height: 300px;
+    background-color: #0F2336;
+    margin: 115px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left__list img {
+    position: relative;
+    top: -80px;
+    left: 0;
+}
+
+.foot__tpass img {
+    padding-top: 50px;
+    margin-left: 135px;
+}
+
+.foot nav {
+    display: flex;
+    justify-content: space-between;
+    width: 530px;
+    margin-top: 100px;
+    margin-left: 290px;
+    align-items: baseline;
+    padding-right: 100px;
+}
+
+.foot nav ul li {
+    margin-bottom: 13px;
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #00CCCC;
+}
+
+.foot nav nav ul li a {
+    margin: 5px auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFFB2;
+    text-decoration: none;
+}
+
+.foot a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.right__list img {
+    margin-top: 47px;
+}
+
+/* /* @media all and (max-width: 1200px) {} */
+
+@media all and (max-width: 992px) {
+    .footer {
+        width: 992px;
+    }
+    .foot__tpass img {
+        margin-left: -27px;
+    }
+    .foot nav {
+        display: flex;
+        justify-content: space-between;
+        width: 444px;
+        margin-top: 75px;
+        margin-left: 124px;
+        align-items: baseline;
+        padding-right: 100px;
+    }
+}
+    @media all and (max-width: 768px) {
+        .hero__right #trees {
+            display: none;
+        }
+        .hero__right #hero_image {
+            display: none;
+        }
+        .feature p {
+            margin: 0;
+        }
+        #benefits-img {
+            display: none;
+        }
+        .benefits__list_item {
+            margin-top: 30px;
+            width: 80%;
+            margin-left: 26px;
+        }
+        .benefits__list_item_desc {
+            font-size: 16px;
+            margin: 0;
+        }
+        .benefits__list_item_desc h2 {
+            font-size: 18px;
+        }
+        .benefits__list_item_desc p {
+            margin: 0;
+        }
+        .info .info__description h2, p {
+            font-size: 30px;
+        }
+        .left__list img {
+            display: none;
+        }
+        .right__list img {
+            display: none;
+        }
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .foot nav {
+            width: 70%;
+        }
+        .foot__tpass img {
+            margin-left: 25px;
+            width: 97px;
+        }
+        .foot nav {
+            width: 70%;
+            margin-left: 172px;
+            margin-top: 65px;
+        }
+        .block-1 {
+            width: 100%;
+        }
+        .info__house h2 {
+            width: 100%;
+        }
+    }
+    @media all and (max-width: 600px) {
+        .features h2 {
+            font-size: 14px;
+        }
+        .feature p {
+            font-size: 9px;
+        }
+        .benefits__list {
+            margin-top: 17px;
+        }
+        .benefits__list_item {
+            margin-top: -13px;
+        }
+        .info .info__description h2, p {
+            font-size: 20px;
+        }
+        .benefits__list_item_desc h2 {
+            font-size: 16px;
+        }
+        .benefits__list_item_desc p {
+            font-size: 14px;
+        }
+        .block-1 img {
+            width: 80px;
+            height: 68px;
+        }
+        .block-1 h2 {
+            width: 520px;
+            font-size: 18px;
+        }
+        .block-1 h2 {
+            font-size: 18px;
+        }
+        .block-2 input {
+            padding: 15px 30px;
+            font-size: 14px;
+            margin-top: 11px;
+        }
+        .block-2 button {
+            padding: 16px 20px;
+        }
+        .block-3 .apples {
+            width: 134px;
+            height: 50px;
+        }
+        .block-3 .google {
+            width: 134px;
+            height: 50px;
+        }
+        .footer {
+            width: 98%;
+        }
+    }
+    @media all and (max-width: 475px) {
+        .block-1 h2 {
+            width: 470px;
+        }
+        .foot__tpass img {
+            margin-top: -50px;
+        }
+        .foot nav {
+            margin-left: 87px;
+        }
+    }
+    @media all and (max-width: 375px) {
+        .foot {
+            width: 100%;
+        }
+        .footer {
+            width: 100%;
+        }
+        .foot nav {
+            width: 70%;
+        }
+        .foot__tpass img {
+            margin-left: 25px;
+            width: 97px;
+            margin-top: -100px;
+        }
+        .foot nav {
+            width: 70%;
+            margin-left: 94px;
+            margin-top: 28px;
+        }
+        .block-1 {
+            width: 100%;
+        }
+        .info__house h2 {
+            width: 100%;
+        }
+        .foot nav ul li {
+            margin-bottom: 13px;
+            list-style-type: none;
+            font-size: 12px;
+            font-weight: 700;
+            color: #00CCCC;
+            width: 69px;
+        }
+    }

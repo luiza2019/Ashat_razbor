@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border: 2px solid black;
+        text-align: left;
+    }
+
+    th,
+    td {
+        border: 1px solid lightgray;
+        padding: 5px;
+    }
+</style>
+
+<body>
+
+
+    <!-- Block -->
+    <!-- должен отвечать на вопрос: что это? -->
+    <!-- это не состояниею какой? как выглядит? -->
+
+    <!-- верно -->
+    <div class="warning"></div>
+
+    <!-- не верно -->
+    <div class="yellow-warning"></div>
+
+    <div class="nav-left">
+        <div class="logo">
+
+        </div>
+        <!-- элементы -->
+        <!-- должен отвечать на вопрос: что это? -->
+        <!-- это не состояниею какой? как выглядит? -->
+
+        <!-- имя элемента отделяется от имени блока двумя подчеркиваниями (__) -->
+
+        <form class="search-form"></form>
+        <input class="search-form__input" type="text">
+        <button class="search-form__button">btn</button>
+
+        <!-- элемент - всегда часть блокаб а ну другого элемента -->
+
+        <form class="search-form"></form>
+        <div class="search-form__content">
+            <input class="search-form__input" type="text">
+            <input class="searc-form__content-input" type="text">
+            <button class="search-form__button">add</button>
+
+            <!-- элемент не обязательный компонент блока. не уу всех блоков должны быть элементы -->
+        </div>
+    </div>
+
+    <form class="search-form"></form>
+    <input class="search-form__input" type="text">
+    <!-- блок search-form -->
+    <form class="search-form"></form>
+    <!-- блок input -->
+    <input class="input type=" text">
+    <!--  блок button -->
+    <button class="button">Search</button>
+
+    <button class="button">Call me</button>
+
+
+
+    <!-- модификатор -->
+
+    <!-- отвечает на вопрос какой? -->
+    <!-- это состояние -->
+    <!-- имя моддификатора отделяется от имени блока или элемента одним подчеркиванием(-) -->
+    <!-- есть два типа модификаторов: булевый и ключ-значение -->
+
+    <!-- булевый -->
+
+    <div class="make-order">
+        <button disabled class="make-order__button make-order__button_disabled">Сделать заказ</button>
+    </div>
+
+
+    <!-- ключ значения -->
+
+
+    <div class="make-order">
+        <button class="make-order__button make-order__button_color_red">сделать заказ</button>
+    </div>
+    <div class="description">
+        <p class="description__paragraf 
+        description__paragraf_color_green 
+        description__paragraf_fsz_24px"></p>
+
+    </div>
+
+    <!--не возможно одновременно использовать два одинаковых модификаторов с разными значениями -->
+
+    <div class="description">
+        <p class="description__paragraf 
+        description-paragraf_fw_700 
+        description_paragraf_fw_400">
+
+        </p>
+    </div>
+
+    <!--  input -->
+    <input type="text" placeholder="Enter name">
+    <input type="password">
+    <input type="tell" placeholder="enter phone number">
+    <input type="e-mail">
+    <input type="number">
+    <input type="checkbox">
+    <input type="date">
+
+    <!-- table -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>price</th>
+                <th>count</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>1</td>
+                <td>ball</td>
+                <td>300</td>
+                <td>12</td>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ball-nike</td>
+                <td>400</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ball-misuna</td>
+                <td>300</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>#</td>
+                <th>Total</th>
+                <td>3000</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

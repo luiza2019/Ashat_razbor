@@ -1,0 +1,154 @@
+/* display: block, inline,inline-block */
+
+/* p {
+    background-color: red;
+    display: inline-block;
+    width: 300px;
+}
+
+span {
+    background-color: aqua;
+    display: block;
+    width: 300px;
+} */
+
+span:first-child {
+    color: blue;
+}
+
+span:last-child {
+    color: coral;
+}
+
+span:nth-child(2) {
+    color: cornflowerblue'
+
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Посещенные ссылки */
+
+a:visited {
+    color: pink;
+}
+
+/* Непосещенные ссылки */
+
+a:link {
+    color: orange;
+}
+
+a {
+    transition: all 1s;
+}
+
+/* При наведении */
+
+a:hover {
+    background-color: rosybrown;
+    font-size: 32px;
+}
+
+/* active */
+
+a:active {
+    color: black;
+}
+
+/* к строчным тегам не работает */
+
+span::first-letter {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* first letter of text */
+
+p::first-letter {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* первая строка текста */
+
+p::first-line {
+    background: lightblue;
+    font-style: italic;
+}
+
+/* чтобы работать с плейсхолдером */
+
+input::placeholder {
+    color: #000;
+    font-size: 15px;
+}
+
+#span-1::before {
+    content: 'Apple';
+}
+
+#span-1::after {
+    content: " M1";
+    font-weight: bold;
+}
+
+/* чтобы поставить контент перед элементом */
+
+#p-2::before {
+    content: "Berry";
+}
+
+/* чтобы поставить контент после элемента */
+
+#p-2::after {
+    content: " star";
+}
+
+.main-block {
+    width: 1005;
+    background: lightgray;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: darkblue;
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+    /* z-index: -1; */
+    z-index: 2;
+}
+
+.first-div {
+    margin-top: 100px;
+}
+
+.content-block {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: darkgreen;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: black;
+    position: absolute;
+    /* right: 0;
+    bottom: 0; */
+    /* left: 0;
+    top: 0; */
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}

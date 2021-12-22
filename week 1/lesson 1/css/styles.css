@@ -1,0 +1,31 @@
+/* селекторы  */
+*{
+margin: 0;
+padding: 0;
+}
+
+h1 {
+    color: aqua;
+    
+}
+h2 {
+    background: red;
+    color: white;
+}
+
+.first-div {
+    fond-size: 24px;
+}
+
+.second-div {
+    font-size: 36px;
+
+    font-weigh: 700;
+    border: 1px dotted gray;
+
+    #first-image {
+        width: 500px;
+        /* height: 500px; */
+    /* } */
+    
+}
